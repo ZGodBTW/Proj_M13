@@ -1,6 +1,7 @@
 <html>
 <h1>Blog articles</h1>
 <p><?= $this->Html->link('Adicionar artigo', ['action' => 'add']) ?></p>
+<?= $this->Html->link('Ordenar alfabeticamente', ['action' => 'order']) ?>
 <table>
 <tr>
 <th>Id</th>
@@ -15,8 +16,9 @@
 <td> <?= $this->Html->link($article->Modelo, ['action' => 'view', $article->id]) ?> </td><!-- Quando Carregamos no modelo do carro abre a informacão dele -->
 
 <td>
-<?= $this->Form->postLink( 'Deletar', ['action' => 'delete', $article->id], ['confirm' => 'Tem certeza?']) ?>
-<?= $this->Html->link('Edit', ['action' => 'edit', $article->id]) ?>
+<?= $this->Form->postLink( 'Deletar ', ['action' => 'delete', $article->id], ['confirm' => 'Tem certeza?']) ?>
+
+<?= $this->Html->link(' Edit', ['action' => 'edit', $article->id]) ?>
 </td>
 </tr>
 <?php endforeach; ?>
