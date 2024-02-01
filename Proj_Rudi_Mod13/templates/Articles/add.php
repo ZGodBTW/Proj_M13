@@ -1,10 +1,15 @@
 <html>
-<h1>Add Article</h1>
+<h1>Adicionar Car</h1>
 <?php
 echo $this->Form->create($article);
-echo $this->Form->input('title');
+echo"Marca:";
+echo $this->Form->input('Marca');
+echo"Modelo:";
+echo $this->Form->input('Modelo');
+echo"Sobre:";
 echo $this->Form->input('body', ['rows' => '3']);
-echo $this->Form->button(__('Salvar artigo'));
+echo"       ";
+echo $this->Form->button(__('Salvar Carro'));
 echo $this->Form->end();
 ?>
 </html>
