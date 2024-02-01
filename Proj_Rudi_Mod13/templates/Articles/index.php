@@ -12,7 +12,7 @@
 <tr>
 <td><?= $article->id ?></td>
 <td> <?= $article->Marca?> </td>
-<td> <?= $this->Html->link($article->Modelo, ['action' => 'view', $article->id]) ?> </td>
+<td> <?= $this->Html->link($article->Modelo, ['action' => 'view', $article->id]) ?> </td><!-- Quando Carregamos no modelo do carro abre a informacão dele -->
 
 <td>
 <?= $this->Form->postLink( 'Deletar', ['action' => 'delete', $article->id], ['confirm' => 'Tem certeza?']) ?>
