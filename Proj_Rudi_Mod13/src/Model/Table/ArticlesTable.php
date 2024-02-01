@@ -8,7 +8,8 @@ public function initialize(array $config) :void
 { $this->addBehavior('Timestamp'); }
 public function validationDefault(Validator $validator): Validator
 { $validator
-->notEmpty('title')
+->notEmpty('Marca')
+->notEmpty('Model')
 ->notEmpty('body');
 return $validator; }
 }
