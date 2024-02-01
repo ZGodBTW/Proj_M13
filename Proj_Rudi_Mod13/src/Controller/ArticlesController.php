@@ -52,6 +52,12 @@ $this->Flash->success(__('O artigo com id: {0} foi eliminado.', h($id)));
 return $this->redirect(['action' => 'index']);
 }
 }
+public function order()
+{
+    $order = $this->request->getQuery('order') ?: 'Marca'; // Default sorting by 'Marca'
+    $articles = $this->Articles->find()->order([$order => 'ASC']);
+    $this->set(compact('articles'));
+}
 }
 
 
