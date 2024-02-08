@@ -15,7 +15,7 @@
 <td> <?= $this->Html->link($article->Modelo, ['action' => 'view', $article->id]) ?> </td><!-- Quando Carregamos no modelo do carro abre a informacão dele -->
 
 <td>
-<?= $this->Form->postLink( 'Deletar ', ['action' => 'delete', $article->id], ['confirm' => 'Tem certeza?']) ?>
+<?= $this->Form->postLink( 'Excluir ', ['action' => 'delete', $article->id], ['confirm' => 'Tem certeza?']) ?>
 
 <?= $this->Html->link(' Edit', ['action' => 'edit', $article->id]) ?>
 </td>
