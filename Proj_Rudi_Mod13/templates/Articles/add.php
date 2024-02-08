@@ -1,5 +1,5 @@
 <html>
-<h1>Adicionar Car</h1>
+<h1>Adicionar Carro</h1>
 <?php
 echo $this->Form->create($article);
 echo"Marca:";
