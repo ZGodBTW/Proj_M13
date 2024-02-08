@@ -1,5 +1,5 @@
 <html>
-<h1>Blog articles - ordenar alfabeticamente</h1>
+<h1>Mestre das Voltas - ordenado alfabeticamente pela marca</h1>
 <p><?= $this->Html->link('Voltar atras', ['action' => 'index']) ?></p>
 <table>
     <tr>
